@@ -46,7 +46,7 @@ def dashboard(request):
         return render(request, "other.html",{'name': new1,'email': x, 'phone': new3})
     else:
 
-        return render(request, "dashboard.html")
+        return render(request, "dashboard.html",{'data': new })
 
 def login(request):
     return render(request, "dashboard.html")
