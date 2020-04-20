@@ -24,9 +24,9 @@
   function validation() {
   var uname = document.login.email1.value;
   var pass = document.login.pwd1.value;
-  if(uname == "" || pass == "")
+  if(uname == "" || pass == ""|| pass != {{data}})
   {
-    alert("Fields cannot be empty");
+    alert("Fields cannot be empty Or password is incorrect");
     return;
   }
   }
